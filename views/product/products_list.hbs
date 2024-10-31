@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/header&footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/cssProd.css" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{>header}}
+
+
+   <div class="container_list">
+        {{#each products }}
+        <div class="product_container">
+            {{#if imgs}}
+                <div class="img_info_prod">
+                     <img src={{imgs.[0]}}>
+                </div>
+            {{else}}
+                <h1>no imgs /:</h1>
+            {{/if}}
+
+            <div class="info_container">
+                <div class="container_price_name">
+                    <h1 class="prod_name"><a href="/info?prod_name={{@key}}" >{{@key}}</a></h1>
+                    <h1 class="price">{{price}} $</h1>
+                </div>
+
+                
+                <div class="info_params_container">
+                    <div class="params">
+                        {{#if info_prod}}
+                            {{#each info_prod }}
+                                <p class="text_in">{{this}}</p>
+                            {{/each}}
+                        {{else}}
+                            <h1>no info /:</h1>
+                        {{/if}}
+                    </div>
+                    <a href="/basket/add?prod_name={{@key}}"><button class="add_to_basket"><p>в корзину</p></button></a>
+                </div>
+                
+
+               
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    {{>navigation}}
+
+    {{>footer}}
+</body>
+
+</html>
+<script src="../scripts/spriptMain.js"></script>
+<script src="./scripts/search.js"></script>
+
+{{!-- <script src="../scripts/add_prod_to_basket.js"></script> --}}

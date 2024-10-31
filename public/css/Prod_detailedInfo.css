@@ -1,0 +1,147 @@
+.container_info {
+    width: 100%;
+    height: auto;
+
+    /* margin-right: 2vw; */
+
+    position: relative;
+    /* margin: auto; */
+    display: inline-flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+img{
+    user-select: none;
+}
+
+
+.all {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+
+.imgs_container {
+    margin-top: 1em;
+    width: 100%;
+    position: relative;
+    left: 0%;
+    height: calc(25vw + 10em);
+    /* min-width: 20vw; */
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-between; */
+    overflow: hidden;
+
+
+    border-bottom: 0.4vw solid black;
+}
+
+/* .imgs_container *{
+    height: 100%;
+} */
+
+.navig_photo {
+    height: calc(3em + 3vw + 10px);
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.img_info_in {
+    position: relative;
+    top: 50%;
+    width: max-content;
+
+    transform: translateY(-50%);
+}
+
+.empty_space {
+    position: relative;
+    height: 100%;
+    margin-right: 100vw;
+}
+
+
+
+div .img_info.mini {
+    background-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    /* height: 100%; */
+    width: 100%;
+
+}
+
+
+
+.img_info.main_photos {
+
+    height: 100%;
+}
+
+
+
+.BigName {
+    font-size: calc(3vw + 10px);
+    margin: 2%;
+}
+
+.info_container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    text-wrap: nowrap;
+    text-align: start;
+    height: min-content;
+    margin-top: 2.5vw;
+    
+    /* flex-wrap: nowrap; */
+    /* justify-content: center; */
+}
+
+/* .navig_photo{} */
+
+
+.text_info_mini {
+    position: relative;
+    font-size: calc(2vw + 10px);
+    color: rgb(0, 0, 0);
+    margin: 0.2vw;
+    height: min-content;
+    text-wrap: wrap;
+    font-weight: 600;
+   
+    /* width: 20vw; */
+
+    /* margin: 30% 1% auto 1%; */
+
+
+}
+
+@media (min-width: 850px) {
+    .all {
+        flex-direction: row;
+    }
+
+    .info_container {
+        margin-top: 0%;
+    }
+
+    .imgs_container {
+        width: 40vw;
+    }
+
+    
+}

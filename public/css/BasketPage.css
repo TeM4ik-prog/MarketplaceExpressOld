@@ -1,0 +1,38 @@
+html {
+    background-color: rgb(236, 201, 201);
+}
+
+.delete_img {
+    border-radius: 1vw;
+    position: relative;
+    height: calc(3.5vw + 2.5em);
+    width: calc(3.5vw + 2.5em);
+    user-select: none;
+    -webkit-user-drag: none;
+
+}
+
+.delete_buy {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: space-between;
+}
+
+.delete_buy * {
+    margin: auto;
+}
+
+.buy_butt {
+    margin: auto;
+    height: calc(1.5vw + 1.5em);
+    width: auto;
+    font-size: calc(2vw + 5px);
+    font-weight: bold;
+}
+
+.delete_img:hover {
+    background-color: rgb(105, 105, 105);
+}

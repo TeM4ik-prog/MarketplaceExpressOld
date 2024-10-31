@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/sellPage.css" type="text/css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <form class="container_form" enctype="multipart/form-data">
+
+        <h1 class="bigText">Продажа товара</h1>
+
+        <div class="container_select_info">
+
+            <select name="category" required>
+                <option disabled selected value="">Выберите категорию товара</option>
+                {{#each categories }}
+                    <option value="{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+
+            <input type="text" name="name" placeholder="Название товара" autocomplete="off" required>
+            <input type="number" name="price" placeholder="Цена($)" required>
+            <input type="text" name="description" placeholder="Описание" autocomplete="off" required>
+
+            <div class="img_input">
+                <input type="file" id="file_input" name="imgs" accept="image/*" readonly multiple>
+                <p id="fileCount">Выбрано картинок: 0</p>
+            </div>
+        </div>
+
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
+
+<script src="./scripts/sellProd.js"></script>

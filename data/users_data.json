@@ -1,0 +1,62 @@
+[
+    {
+        "username": "admin",
+        "password": "admin",
+        "balance": 9000,
+        "basket": {},
+        "prod_on_sell": {
+            "Смартфон HONOR X7b 8GB/128GB международная версия с NFC (мерцающий серебристый)": {
+                "name": "Смартфон HONOR X7b 8GB/128GB международная версия с NFC (мерцающий серебристый)",
+                "price": 700,
+                "info_prod": {
+                    "info": "Android, экран 6.8\" IPS (1080x2412) 90 Гц, Qualcomm Snapdragon 680, ОЗУ 8 ГБ, память 128 ГБ, поддержка карт памяти, камера 108 Мп, аккумулятор 6000 мАч, 2 SIM (nano-SIM)"
+                },
+                "imgs": [
+                    "uploads/honor.jpg",
+                    "uploads/honor2.jpg",
+                    "uploads/honor3.jpg"
+                ],
+                "whoSell": "admin"
+            },
+            "Футболка Simms Sunset T-Shirt (S, темно-синий)": {
+                "name": "Футболка Simms Sunset T-Shirt (S, темно-синий)",
+                "price": 100,
+                "info_prod": {
+                    "info": "футболка, мужской, лето, размер S"
+                },
+                "imgs": [
+                    "uploads/5f4b00c2ea034ddbb4f312d0284de715.jpg"
+                ],
+                "whoSell": "admin"
+            }
+        }
+    },
+    {
+        "username": "TeM4ik",
+        "password": "admin",
+        "balance": 8000,
+        "basket": {},
+        "prod_on_sell": {}
+    },
+    {
+        "username": "test",
+        "password": "3031",
+        "balance": 8000,
+        "basket": {
+            "iphone 15 pro max": {
+                "name": "iphone 15 pro max",
+                "price": 2000,
+                "info_prod": {
+                    "info": "new iphone"
+                },
+                "imgs": [
+                    "uploads/iphone1.jpg",
+                    "uploads/iphone2.jpg"
+                ],
+                "whoSell": "admin",
+                "CanUserBuy": true
+            }
+        },
+        "prod_on_sell": {}
+    }
+]

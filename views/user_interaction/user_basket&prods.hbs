@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/cssProd.css" type="text/css">
+    <link href="../css/BasketPage.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+</head>
+
+<body>
+    <h1 class="bigName">{{header}}</h1>
+
+    <div class="container_list">
+        {{#each products }}
+
+        <div class="product_container">
+            {{#if imgs}}
+            <div class="img_info_prod">
+                <img class="img_info_prod" src=../{{imgs.[0]}}>
+            </div>
+            {{else}}
+            <h1>no imgs /:</h1>
+            {{/if}}
+
+            <div class="info_container">
+                <div class="container_price_name">
+                    <h1 class="prod_name"><a href="/info?prod_name={{@key}}">{{@key}}</a></h1>
+                    <h1 class="price">{{price}} $</h1>
+                </div>
+
+                <div class="params">
+                    {{#if info_prod}}
+                        {{#each info_prod }}
+                            <p class="text_in">{{this}}</p>
+                        {{/each}}
+                    {{else}}
+                        <h1>no info /:</h1>
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="delete_buy">
+                <a onclick="DeleteProdFromBasket('{{@key}}')" draggable="false">
+                    <img class="delete_img" draggable="false" src="../img/delete_icon.png">
+                </a>
+
+                {{#if CanUserBuy}}
+                    <button onclick="BuyProduct('{{@key}}')" class="buy_butt">Buy</button>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</body>
+
+</html>
+
+<script src="../scripts/Buy&deleteProd.js"></script>

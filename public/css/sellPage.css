@@ -1,0 +1,74 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(82, 82, 82);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    
+}
+
+.bigText {
+    font-size: calc(2em + 1vw);
+    margin: 2%;
+    text-align: center;
+    text-decoration: underline;
+   
+
+
+}
+
+.container_form {
+    background-color: rgb(175, 175, 175);
+    width: calc(10vw + 20em);
+    height: 40em;
+    display: inline-flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border: 0.5em solid black;
+    border-radius: 1em;
+    box-sizing: border-box;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.container_select_info {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.container_select_info * {
+    width: 100%;
+    box-sizing: border-box;
+    height: 5%;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+.img_input{
+    height: 10%;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#file_input {
+   height: 50%;
+}
+#fileCount{
+    margin: 0%;
+}
+
+
+

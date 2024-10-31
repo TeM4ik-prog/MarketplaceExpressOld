@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/header&footer.css" type="text/css">
+    <link rel="stylesheet" href="./css/Prod_detailedInfo.css" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{>header}}
+
+
+    {{#if isVisible }}
+    <h1 class="BigName">{{name}}</h1>
+
+
+    <div class="all">
+
+        <div class="container_info">
+
+            {{#if imgs}}
+            <div class="imgs_container">
+                {{#each imgs}}
+                <div class="img_info main_photos">
+                    <img class="img_info_in" draggable="false" id="photo-{{@index}}" src={{this}}>
+                </div>
+                <div class="empty_space"></div>
+                {{/each}}
+            </div>
+            {{else}}
+            <h1 class="imgs_container">no imgs /:</h1>
+            {{/if}}
+
+
+            <nav class="navig_photo">
+                {{#each imgs}}
+                <div class="img_info mini" onclick="scrollToTarget('photo-{{@index}}')">
+                    <img class="img_info_in" draggable="false" src={{this}} alt="not found">
+                </div>
+                {{/each}}
+            </nav>
+        </div>
+
+
+        {{#if info_prod}}
+
+        <div class="info_container">
+            {{#each info_prod }}
+                <p class="text_info_mini">{{this}}</p>
+            {{/each}}
+        </div>
+        {{else}}
+            <h1 class="info_container">no info /:</h1>
+        {{/if}}
+
+    </div>
+
+    {{else}}
+    <div>
+        <h1>К сожалению нам не удалось найти этот продукт!</h1>
+        <h1>Возможно он был снят с продажи или куплен</h1>
+    </div>
+
+    {{/if}}
+
+
+
+
+
+
+    {{>navigation}}
+
+    {{>footer}}
+
+</body>
+
+</html>
+
+<script src="./scripts/spriptMain.js"></script>
+<script src="./scripts/search.js"></script>

@@ -1,0 +1,158 @@
+html {
+    background-color: rgb(223, 223, 223);
+}
+
+.bigName {
+    font-size: calc(3vw + 10px);
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.container_list {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: 98%;
+
+    padding: 1%;
+
+}
+
+.product_container {
+    /* padding: 1%; */
+    position: relative;
+
+    border-bottom: 0.3vh solid rgb(77, 77, 77);
+    box-sizing: border-box;
+    flex-direction: row;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    /* height: min-content; */
+    width: 100%;
+}
+
+.prod_name {
+    position: relative;
+    font-size: calc(1.5vw + 10px + 0.2em);
+    margin: 2% 0 2% 0;
+    width: 100%;
+}
+
+
+
+
+
+.info_container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-left: 2vw;
+}
+
+.container_price_name {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.img_info_prod {
+    position: relative;
+    width: calc(8vw + 4em);
+}
+
+.img_info_prod img {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    /* width: auto; */
+}
+
+.text_in {
+    font-size: calc(0.7vw + 8px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 1%;
+    text-wrap: nowrap;
+    width: min-content;
+}
+
+.info_params_container {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.params {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.params .text_in {
+    width: auto;
+    margin: 0 0 1% 0;
+    text-wrap: wrap;
+}
+
+.add_to_basket {
+    height: calc(2.5vw + 1em);
+    text-wrap: nowrap;
+    width: min-content;
+    background-color: rgb(255, 106, 0);
+    border: none;
+    border-radius: 0.6vw;
+    margin-bottom: 1vw;
+}
+
+.add_to_basket p {
+    margin: 0%;
+    font-size: calc(1vw + 8px);
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.add_to_basket:hover {
+    background-color: rgb(201, 84, 0);
+}
+
+.price {
+    position: relative;
+    text-wrap: nowrap;
+    font-size: calc(4vw + 10px);
+    width: min-content;
+    height: min-content;
+    margin: 0 auto 3% 0;
+
+    font-weight: 200;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+@media (min-width: 700px) {
+    .container_price_name {
+        flex-direction: row;
+        margin-bottom: 2%;
+    }
+
+    .price {
+        margin: auto 0 auto 10%;
+        width: min-content;
+    }
+
+    .prod_name {
+        width: 100%;
+    }
+
+    .add_to_basket {
+        width: calc(8vw + 8em);
+    }
+}

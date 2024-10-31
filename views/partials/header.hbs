@@ -1,0 +1,36 @@
+{{!-- {{log '+' this}} --}}
+
+<header class="header_container">
+    <div class="header_mini_in" style="justify-content: space-between;">
+        {{!-- <img class="img_in" src="../img/onliner_logo.png"> --}}
+
+        <div class="logo_container">
+            <img class="img_in" src="../img/logoShop-preview.png">
+            <h1 class="BigLogo">𝒜𝓈𝓉𝓇𝑜𝐵𝒶𝓏𝒶𝒶𝓇</h1>
+        </div>
+
+
+        <div class="search_container">
+            <input type="text" class="search" id="search_input" placeholder="Введите название товара">
+            <img class="img_search_in" id="search_butt" src="../img/search-icon.png">
+            {{!-- <button / type="submit" class="search_butt" id="search_butt"></button> --}}
+        </div>
+
+
+        <div class="acccount_container" onclick="loadUser()">
+            <img class="img_in" id="navigation" style="right: 10%;" src="../img/navigation.png">
+        </div>
+    </div>
+
+    <div class="header_mini_in" style="overflow-x: auto;">
+        <p class="text_in"><a href="/">Main Page</a></p>
+        <p class="text_in"><a href="/list_all">All prods</a></p>
+
+
+        {{#each keys }}
+            <p class="text_in"><a href="/list_all?category={{this}}">{{this}}</a></p>
+        {{/each}}
+    </div>
+</header>
+
+<script src="../scripts/GetUserData.js"></script>

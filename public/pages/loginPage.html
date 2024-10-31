@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="../css/cssAuth.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+</head>
+
+
+<div class="container_All_Auth">
+    
+    <div class="headerAuth">
+            <p><b>LogIn</b></p>
+            <p>/</p>
+            <a  class="smaller_text" href="/Auth_singup_page"><p>SingUp</p></a>
+        </div>
+    <form class="container_form_Auth" onsubmit="UserLogin_Singup('login', event)">
+
+       
+
+        <input type="text" id="username" placeholder="username" required >
+        <input type="text" id="password" placeholder="password" required>
+
+        <button>Login</button>
+    </form>
+</div>
+</html>
+
+<script src="../scripts/scriptAuth.js"></script>
