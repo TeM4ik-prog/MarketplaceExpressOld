@@ -2,22 +2,9 @@
     {
         "username": "admin",
         "password": "admin",
-        "balance": 9000,
+        "balance": 9700,
         "basket": {},
         "prod_on_sell": {
-            "Смартфон HONOR X7b 8GB/128GB международная версия с NFC (мерцающий серебристый)": {
-                "name": "Смартфон HONOR X7b 8GB/128GB международная версия с NFC (мерцающий серебристый)",
-                "price": 700,
-                "info_prod": {
-                    "info": "Android, экран 6.8\" IPS (1080x2412) 90 Гц, Qualcomm Snapdragon 680, ОЗУ 8 ГБ, память 128 ГБ, поддержка карт памяти, камера 108 Мп, аккумулятор 6000 мАч, 2 SIM (nano-SIM)"
-                },
-                "imgs": [
-                    "uploads/honor.jpg",
-                    "uploads/honor2.jpg",
-                    "uploads/honor3.jpg"
-                ],
-                "whoSell": "admin"
-            },
             "Футболка Simms Sunset T-Shirt (S, темно-синий)": {
                 "name": "Футболка Simms Sunset T-Shirt (S, темно-синий)",
                 "price": 100,
@@ -57,6 +44,13 @@
                 "CanUserBuy": true
             }
         },
+        "prod_on_sell": {}
+    },
+    {
+        "username": "sdfsdf",
+        "password": "sdfsdf",
+        "balance": 9300,
+        "basket": {},
         "prod_on_sell": {}
     }
 ]

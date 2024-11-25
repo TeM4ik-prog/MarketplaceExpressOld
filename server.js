@@ -32,4 +32,6 @@ app.use("/sell", SellRouter)
 app.use(ProdDataRouter)
 
 
-app.listen(port)
+app.listen(port, ()=>{
+    console.log(`Server is running on port ${port}`)
+})
